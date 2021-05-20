@@ -1,0 +1,16 @@
+@media screen and (max-width: 1500px) {
+    .dashboard {
+        width:100%;
+        height: 100vh;
+        display: inline-flex;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .dashboard {
+        width:100%;
+        height: 100vh;
+        display: block;
+    }
+}
+

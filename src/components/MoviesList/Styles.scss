@@ -1,0 +1,44 @@
+@import "../variables.scss";
+
+.main-panel {
+    display:flex;
+    height: 100%;
+    width: 100%;
+}
+
+.main-panel-with-details {
+    @extend .main-panel;
+    width: 65%;
+}
+
+.movie-list {
+    margin: 10px;
+}
+
+.order-select-holder {
+    text-align: left;
+    margin: 20px;
+}
+
+.movie-row {
+    background-color: $bgColor;
+    box-shadow: 10px 10px 5px $shadowColor;
+    font-family: $fontFamily;
+    cursor: pointer;
+
+    .image {
+        width: 100px;
+    }
+    .title{
+        text-align: left;
+        font-weight: bolder;
+    }
+}
+
+.movie-row__selected {
+    background-color: $shadowColor;
+    font-weight: bolder;
+    cursor: pointer;
+    font-family: $fontFamily;
+    text-align: left;
+}
