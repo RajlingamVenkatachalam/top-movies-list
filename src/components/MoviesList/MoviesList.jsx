@@ -1,5 +1,6 @@
 import React from "react";
 import { useSelector, useDispatch } from "react-redux";
+import PropTypes from "prop-type";
 import { fetchMoviesData } from "./redux/action";
 import InputLabel from "@material-ui/core/InputLabel";
 import Select from "@material-ui/core/Select";
@@ -48,6 +49,12 @@ const MoviesList = ({ selectedMovieId, handleMovieSelection }) => {
                 </table>
         </div>
     )
+}
+
+
+MoviesList.propTypes = {
+    selectedMovieId: PropTypes.number,
+    handleMovieSelection: PropTypes.func
 }
 
 export default MoviesList;
