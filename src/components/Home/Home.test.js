@@ -1,5 +1,5 @@
 import React from "react";
-import reactRedux, { Provider } from "react-redux";
+import { Provider, useSelector } from "react-redux";
 import renderer from "react-test-renderer";
 import configureStore from "redux-mock-store";
 import Home from "./Home";
@@ -7,33 +7,51 @@ import { moviesList, orderSelect } from "../testUtil/testData";
 
 const mockStore = configureStore([]);
 
-describe("MovieList dashboard test",()=>{
+jest.mock("react-redux", () => ({
+    ...jest.requireActual("react-redux"),
+    useSelector: jest.fn()
+  })
+);
+
+describe("MovieList dashboard test", () => {
     let store;
     let component;
 
-    const useSelectorMock = jest.spyOn(reactRedux, 'useSelector')
-    const useDispatchMock = jest.spyOn(reactRedux, 'useDispatch')
-
     beforeEach(() => {
-        store = mockStore({
+        const mockState =  {
             moviesList,
             orderSelect
-        });
+        };
+
+        useSelector.mockImplementation(callback => {
+            return callback(mockState);
+          });           
+    });
+
+    afterEach(() => {
+        useSelector.mockClear();
+    });
+
+    it("should render with given mockState", () => {
+        const mockState =  {
+            moviesList,
+            orderSelect
+        };
+        store = mockStore(mockState);
 
         store.dispatch = jest.fn();
+
+        useSelector.mockImplementation(callback => {
+            return callback(mockState);
+          });
 
         component = renderer.create(
             <Provider store={store}>
                 <Home />
             </Provider>
-        )
-    });
+        );
 
-    it("should render with given mockState", () => {
         expect(component.toJSON()).toMatchSnapshot();
     });
 
-    it("should dispatch fetchMovies action at initial", () => {
-        expect(store.dispatch).toHaveBeenCalledTimes(1);
-    })
 })

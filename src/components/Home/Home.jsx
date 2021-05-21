@@ -6,7 +6,6 @@ import "./Styles.scss";
 const Home = () => {
     const[selectedMovie, setSelectedMovie] = React.useState("");
 
-    
     const onChangeMovieSelection = (movieDetail) =>{
         setSelectedMovie(movieDetail)
     }

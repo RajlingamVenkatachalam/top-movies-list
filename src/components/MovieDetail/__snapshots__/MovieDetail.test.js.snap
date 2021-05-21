@@ -1,0 +1,56 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test MovieDetail should display the Detail without any crash 1`] = `
+<div
+  className="card"
+>
+  <img
+    className="media"
+    src="https://preview.ibb.co/fn5Xyp/raiders.jpg"
+    title="Raiders of the Lost Ark"
+  />
+  <div
+    className="MuiCardContent-root"
+  >
+    <h2
+      className="MuiTypography-root MuiTypography-h5 MuiTypography-gutterBottom"
+    >
+      Raiders of the Lost Ark
+    </h2>
+    <p
+      className="MuiTypography-root MuiTypography-body2 MuiTypography-colorTextSecondary"
+    >
+      Epic tale in which an intrepid archaeologist tries to beat a band of Nazis to a unique religious relic which is central to their plans for world domination. Battling against a snake phobia and a vengeful ex-girlfriend, Indiana Jones is in constant peril, making hair's-breadth escapes at every turn in this celebration of the innocent adventure movies of an earlier era.
+    </p>
+    <div
+      style={
+        Object {
+          "marginTop": "10px",
+          "textAlign": "left",
+        }
+      }
+    >
+      <h2
+        className="MuiTypography-root MuiTypography-h6"
+      >
+        Release Date
+      </h2>
+      <p
+        className="MuiTypography-root MuiTypography-body1 MuiTypography-colorTextSecondary"
+      >
+        1981
+      </p>
+      <h2
+        className="MuiTypography-root MuiTypography-h6"
+      >
+        Rank
+      </h2>
+      <p
+        className="MuiTypography-root MuiTypography-body1 MuiTypography-colorTextSecondary"
+      >
+        2
+      </p>
+    </div>
+  </div>
+</div>
+`;
