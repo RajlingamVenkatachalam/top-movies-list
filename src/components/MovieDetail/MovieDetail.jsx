@@ -1,5 +1,4 @@
 import React from "react";
-import PropTypes from "prop-type";
 import { CardContent, Typography } from "@material-ui/core";
 import "./Styles.scss";
 
@@ -39,10 +38,6 @@ const MovieDetail = ({ movieDetail }) => {
             </CardContent>
         </div>
     )
-}
-
-MovieDetail.propTypes = {
-    movieDetail: PropTypes.object
 }
 
 export default MovieDetail;

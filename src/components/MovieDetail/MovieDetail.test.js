@@ -8,4 +8,4 @@ describe("test MovieDetail", () => {
         let component = renderer.create(<MovieDetail movieDetail={moviesList[0]} />);
         expect(component.toJSON()).toMatchSnapshot();
     });
-})
+});

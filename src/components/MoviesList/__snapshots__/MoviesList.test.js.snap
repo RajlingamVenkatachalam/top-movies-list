@@ -1,0 +1,137 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test MoviesList should display the Detail without any crash 1`] = `
+<div
+  className="main-panel-with-details"
+>
+  <div
+    className="order-select-holder"
+  >
+    <label
+      className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-animated"
+      id="order-select-title"
+    >
+      Sort By
+    </label>
+    <div
+      className="MuiInputBase-root MuiInput-root MuiInput-underline"
+      onClick={[Function]}
+      style={
+        Object {
+          "width": "200px",
+        }
+      }
+    >
+      <div
+        aria-haspopup="listbox"
+        aria-labelledby="order-select"
+        className="MuiSelect-root MuiSelect-select MuiSelect-selectMenu MuiInputBase-input MuiInput-input"
+        id="order-select"
+        onBlur={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onMouseDown={[Function]}
+        role="button"
+        tabIndex={0}
+      >
+        <span
+          dangerouslySetInnerHTML={
+            Object {
+              "__html": "&#8203;",
+            }
+          }
+        />
+      </div>
+      <input
+        aria-hidden={true}
+        className="MuiSelect-nativeInput"
+        onAnimationStart={[Function]}
+        onChange={[Function]}
+        tabIndex={-1}
+        value=""
+      />
+      <svg
+        aria-hidden={true}
+        className="MuiSvgIcon-root MuiSelect-icon"
+        focusable="false"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M7 10l5 5 5-5z"
+        />
+      </svg>
+    </div>
+  </div>
+  <table
+    className="movie-list"
+    style={
+      Object {
+        "height": "600px",
+        "overflow": "scroll",
+        "position": "relative",
+      }
+    }
+  >
+    <tr
+      className="movie-row"
+      id={2}
+      onClick={[Function]}
+    >
+      <td
+        className="image"
+      >
+        <img
+          height="100"
+          src="https://preview.ibb.co/fn5Xyp/raiders.jpg"
+          width="100"
+        />
+      </td>
+      <td
+        className="title"
+      >
+        Raiders of the Lost Ark
+      </td>
+    </tr>
+    <tr
+      className="movie-row"
+      id={4}
+      onClick={[Function]}
+    >
+      <td
+        className="image"
+      >
+        <img
+          height="100"
+          src="https://preview.ibb.co/h9434U/blade_Runner.jpg"
+          width="100"
+        />
+      </td>
+      <td
+        className="title"
+      >
+        Blade Runner
+      </td>
+    </tr>
+    <tr
+      className="movie-row"
+      id={3}
+      onClick={[Function]}
+    >
+      <td
+        className="image"
+      >
+        <img
+          height="100"
+          src="https://preview.ibb.co/caykJp/terminator.jpg"
+          width="100"
+        />
+      </td>
+      <td
+        className="title"
+      >
+        The Terminator
+      </td>
+    </tr>
+  </table>
+</div>
+`;
